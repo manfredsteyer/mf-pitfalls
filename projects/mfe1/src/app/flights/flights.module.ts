@@ -5,10 +5,12 @@ import { RouterModule } from '@angular/router';
 import { FLIGHTS_ROUTES } from './flights.routes';
 import { AuthLibModule } from 'auth-lib';
 import { SharedLibModule } from 'shared-lib';
+import { MatSnackBarModule  } from '@angular/material/snack-bar';
 
 @NgModule({
   imports: [
     CommonModule,
+    MatSnackBarModule,
     AuthLibModule,
     SharedLibModule,
     RouterModule.forChild(FLIGHTS_ROUTES)

@@ -13,6 +13,7 @@
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
+						"optimization": false,
 						"commonChunk": false,
 						"outputPath": "dist/mfe1",
 						"index": "projects/mfe1/src/index.html",
@@ -20,6 +21,7 @@
 						"polyfills": "projects/mfe1/src/polyfills.ts",
 						"tsConfig": "projects/mfe1/tsconfig.app.json",
 						"aot": true,
+						"namedChunks": true,
 						"assets": [
 							"projects/mfe1/src/favicon.ico",
 							"projects/mfe1/src/assets"
@@ -70,8 +72,11 @@
 						"production": {
 							"browserTarget": "mfe1:build:production",
 							"extraWebpackConfig": "projects/mfe1/webpack.prod.config.js"
+						},
+						"development": {
 						}
-					}
+					},
+					"defaultConfiguration": "development"
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
@@ -134,6 +139,7 @@
 				"build": {
 					"builder": "ngx-build-plus:browser",
 					"options": {
+						"optimization": false,
 						"commonChunk": false,
 						"outputPath": "dist/shell",
 						"index": "projects/shell/src/index.html",
@@ -141,6 +147,7 @@
 						"polyfills": "projects/shell/src/polyfills.ts",
 						"tsConfig": "projects/shell/tsconfig.app.json",
 						"aot": true,
+						"namedChunks": true,
 						"assets": [
 							"projects/shell/src/favicon.ico",
 							"projects/shell/src/assets"
