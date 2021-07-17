@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { OtherLibService } from 'other-lib';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'platform'
 })
 export class AuthLibService {
 
