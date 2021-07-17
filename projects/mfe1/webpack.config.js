@@ -7,7 +7,7 @@ const share = mf.share;
 const sharedMappings = new mf.SharedMappings();
 sharedMappings.register(
   path.join(__dirname, '../../tsconfig.json'),
-  ['auth-lib']  
+  ['auth-lib', 'other-lib']  
 );
 
 module.exports = {

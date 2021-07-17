@@ -12,12 +12,9 @@ export class AppComponent {
 
   constructor(
     private service: AuthLibService, 
-    private http: HttpClient,
-    private snackBar: MatSnackBar
+    private http: HttpClient
     ) {
       
-      snackBar.open('Hello World!');
-
     this.service.login('Max', null);
     console.debug('http', http);
   }
