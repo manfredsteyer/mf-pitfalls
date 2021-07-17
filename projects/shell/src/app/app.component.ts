@@ -11,12 +11,10 @@ export class AppComponent {
   title = 'shell';
 
   constructor(
-    private service: AuthLibService, 
-    private http: HttpClient
+    private service: AuthLibService
     ) {
       
     this.service.login('Max', null);
-    console.debug('http', http);
   }
 
 }
