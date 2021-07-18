@@ -17,7 +17,7 @@ export const APP_ROUTES: Routes = [
     {
       path: 'flights',
       loadChildren: () => loadRemoteModule({
-          remoteEntry: URL,
+          remoteEntry: 'https://brave-plant-03ca65b10.azurestaticapps.net/remoteEntry.js',
           remoteName: 'mfe1',
           exposedModule: './Module'
         })

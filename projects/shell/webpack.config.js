@@ -32,10 +32,10 @@ module.exports = {
       },
 
       shared: share({
-        "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-        "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-        "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
-        "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
+        "@angular/core": { requiredVersion: '^12.0.0' },
+        "@angular/common": { requiredVersion: '^12.0.0' },
+        "@angular/router": { requiredVersion: '^12.0.0' },
+        "@angular/common/http": { requiredVersion: '^12.0.0' }, 
         "@angular/material/snack-bar": { singleton: true, strictVersion: true, requiredVersion:'auto' }, 
 
         // Uncomment for sharing lib of an Angular CLI or Nx workspace
